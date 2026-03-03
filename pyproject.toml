@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pyselector"
-description = "WIP"
+description = "pyselector is a Python wrapper for the rofi, dmenu, fzf application, which provides a simple and efficient way to display a list of items for user selection."
 readme = "README.md"
 version = "0.0.42"
 keywords = ["cli", "dmenu", "fzf", "menu", "rofi", "utility"]
