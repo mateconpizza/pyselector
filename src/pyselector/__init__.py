@@ -28,5 +28,3 @@ from pyselector.selector import Menu
 Menu.register('dmenu', Dmenu)
 Menu.register('rofi', Rofi)
 Menu.register('fzf', Fzf)
-
-__version__ = '0.0.41'

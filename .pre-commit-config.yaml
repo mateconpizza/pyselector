@@ -2,16 +2,15 @@
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v6.0.0
     hooks:
       - id: check-added-large-files
       - id: end-of-file-fixer
-      - id: requirements-txt-fixer
       - id: trailing-whitespace
 
   # Autoflake
   - repo: https://github.com/PyCQA/autoflake
-    rev: v2.3.1
+    rev: v2.3.3
     hooks:
       - id: autoflake
 
@@ -24,40 +23,40 @@ repos:
 
   # Ruff
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.4.10
+    rev: v0.15.4
     hooks:
       - id: ruff
 
   # Pyupgrade
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.16.0
+    rev: v3.21.2
     hooks:
       - id: pyupgrade
 
   # MyPy
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.10.0
+    rev: v1.19.1
     hooks:
       - id: mypy
 
   # Validate pyproject
   - repo: https://github.com/abravalheri/validate-pyproject
-    rev: v0.18
+    rev: v0.25
     hooks:
       - id: validate-pyproject
 
   # Spell
   - repo: https://github.com/crate-ci/typos
-    rev: v1.22.8
+    rev: v1.44.0
     hooks:
       - id: typos
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.3.0
+    rev: v2.4.1
     hooks:
       - id: codespell
 
   # Security
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.18.4
+    rev: v8.30.0
     hooks:
       - id: gitleaks

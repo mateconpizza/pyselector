@@ -1,22 +1,26 @@
 [build-system]
+requires = ["hatchling>=1.27.0"]
 build-backend = "hatchling.build"
-requires = ["hatchling"]
 
 [project]
 name = "pyselector"
 description = "WIP"
 readme = "README.md"
+version = "0.0.42"
 keywords = ["cli", "dmenu", "fzf", "menu", "rofi", "utility"]
-license = { file = "LICENSE.txt" }
-authors = [{ name = "haaag", email = "git.haaag@gmail.com" }]
-requires-python = ">=3.7"
-dynamic = ["version"]
-dependencies = ["python-xlib==0.33", "pillow==10.4.0"]
+license = "MIT"
+license-files = ["LICENSE.txt"]
+authors = [{ name = "mateconpizza", email = "81921095+mateconpizza@users.noreply.github.com" }]
+requires-python = ">=3.11"
+dependencies = [
+    "pillow>=12.1.1",
+    "python-xlib==0.33",
+]
 
 [project.urls]
-Documentation = "https://github.com/haaag/pyselector#readme"
-Issues = "https://github.com/haaag/pyselector/issues"
-Source = "https://github.com/haaag/pyselector"
+Documentation = "https://github.com/mateconpizza/pyselector#readme"
+Issues = "https://github.com/mateconpizza/pyselector/issues"
+Source = "https://github.com/mateconpizza/pyselector"
 
 [project.optional-dependencies]
 dev = ["mypy==1.0.1", "ruff==0.0.257"]
