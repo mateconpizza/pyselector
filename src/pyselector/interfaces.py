@@ -42,7 +42,7 @@ class MenuInterface(Protocol):
         case_sensitive: bool | None = None,
         multi_select: bool = False,
         prompt: str = constants.PROMPT,
-        preprocessor: Callable[..., Any] = lambda x: str(x),
+        preprocessor: Callable[..., Any] = str,
         **kwargs,
     ) -> PromptReturn: ...
 

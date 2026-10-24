@@ -1,6 +1,7 @@
 # test_fzf.py
 
 import pytest
+
 from pyselector.menus.fzf import Fzf
 
 

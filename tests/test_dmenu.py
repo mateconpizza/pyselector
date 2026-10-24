@@ -1,4 +1,5 @@
 import pytest
+
 from pyselector.menus.dmenu import Dmenu
 
 

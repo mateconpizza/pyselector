@@ -167,7 +167,7 @@ class Fzf:
         case_sensitive: bool = False,
         multi_select: bool = False,
         prompt: str = constants.PROMPT,
-        preprocessor: Callable[..., Any] = lambda x: str(x),
+        preprocessor: Callable[..., Any] = str,
         **kwargs,
     ) -> PromptReturn:
         encoding = sys.getdefaultencoding()
@@ -203,7 +203,7 @@ class Fzf:
         case_sensitive: bool = False,
         multi_select: bool = False,
         prompt: str = constants.PROMPT,
-        preprocessor: Callable[..., Any] = lambda x: str(x),
+        preprocessor: Callable[..., Any] = str,
         **kwargs,
     ) -> PromptReturn:
         """
@@ -246,7 +246,7 @@ class Fzf:
         case_sensitive: bool = False,
         multi_select: bool = False,
         prompt: str = constants.PROMPT,
-        preprocessor: Callable[..., Any] = lambda x: str(x),
+        preprocessor: Callable[..., Any] = str,
         **kwargs,
     ) -> PromptReturn:
         # FIX: Split me...

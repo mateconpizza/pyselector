@@ -5,6 +5,7 @@ from typing import NamedTuple
 from typing import Union
 
 import pytest
+
 from pyselector import extract
 
 ITEMS = ['apple', 'banana', 'cherry', 'orange', 'grape', 'kiwi']

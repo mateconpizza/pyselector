@@ -1,4 +1,5 @@
 import pytest
+
 from pyselector import Menu
 from pyselector.menus.dmenu import Dmenu
 from pyselector.menus.fzf import Fzf

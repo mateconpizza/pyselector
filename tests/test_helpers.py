@@ -8,6 +8,7 @@ from typing import Type
 from typing import Union
 
 import pytest
+
 from pyselector import helpers
 from pyselector.exc import ExecutableNotFoundError
 

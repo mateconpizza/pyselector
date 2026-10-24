@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import pytest
+
 from pyselector.key_manager import Keybind
 from pyselector.key_manager import KeybindError
 from pyselector.key_manager import KeyManager

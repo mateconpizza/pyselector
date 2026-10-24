@@ -33,4 +33,3 @@ test-gui: test-rofi test-dmenu test-fzf
 lint:
 	@echo '>> Linting code'
 	@ruff check .
-	@codespell .

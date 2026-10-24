@@ -5,6 +5,7 @@ from typing import Type
 from typing import Union
 
 import pytest
+
 from pyselector.menus.rofi import Rofi
 
 
@@ -66,7 +67,7 @@ def test_build_args_not_case_sensitive(rofi: Rofi) -> None:
 
 def test_return_nonzero(rofi: Rofi, items) -> None:
     """Test case user hits escape raises SystemExit"""
-    lines, code = rofi.prompt(items=items, prompt='Hit <Escape>', mesg='> Hit <Escape>')
+    _lines, code = rofi.prompt(items=items, prompt='Hit <Escape>', mesg='> Hit <Escape>')
 
     assert code != 0
 

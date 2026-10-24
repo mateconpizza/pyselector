@@ -105,7 +105,7 @@ class Dmenu:
         case_sensitive: bool = False,
         multi_select: bool = False,
         prompt: str = constants.PROMPT,
-        preprocessor: Callable[..., Any] = lambda x: str(x),
+        preprocessor: Callable[..., Any] = str,
         **kwargs,
     ) -> PromptReturn:
         """Prompts the user with a rofi window containing the given items
@@ -161,7 +161,7 @@ class Dmenu:
         case_sensitive: bool = False,
         multi_select: bool = False,
         prompt: str = constants.PROMPT,
-        preprocessor: Callable[..., Any] = lambda x: str(x),
+        preprocessor: Callable[..., Any] = str,
         **kwargs,
     ) -> tuple[T | None, int]:
         helpers.check_type(items)
